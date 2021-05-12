@@ -1,0 +1,81 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    outline:0;
+}
+
+.home
+{
+    background-color: rgb(241, 238, 241);
+    height: 450px;
+}
+
+.home .btn
+{
+    margin: 15px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn
+{   
+    margin-right: 0px 10px 10px 0;
+    border: 1px solid rgb(110, 105, 105);
+    border-radius: 6px;
+}
+.dropdown-menu
+{
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(241, 238, 241);
+}
+form
+{
+    border: 2px solid rgb(241, 238, 241);
+    padding: 20px;
+
+}
+table
+{
+    margin-top: 15px;
+}
+thead
+{
+    background-color:rgb(241, 238, 241) ;
+}
+.testtypebtn,.testbtn
+{
+    text-align: right;
+}
+.divtesttypebtn,.divtestbtn
+{
+    width:68%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:575px)
+{
+    .divtesttypebtn,.divtestbtn
+    {
+        width: 100%;
+    }
+    .label
+    {
+        text-align: center;
+        width: 100%;
+    }    
+}
+@media screen and (max-width:767px) 
+{
+    label
+{
+    margin-left: 10px;
+    
+}
+.btn1
+    {
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+}

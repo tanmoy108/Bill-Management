@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Bill Management</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- fav icon -->
+  <link rel="fav icon" type="image/png" href="fav_icon.jpg">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!------------------------------------------- Home Start------------------------------------------->
+  <div class="container home">
+
+    <h2>Home</h2>
+    <h3 class="text-center">Diagnostic Center Bill Management System</h3>
+    <div class="text-center mt-5">
+
+      <div class="btn-group">
+        <button class="btn  btn-outline-dark dropdown-toggle" id="setupdropdown" data-toggle="dropdown">
+          Setup
+        </button>
+        <div class="dropdown-menu" aria-labelledby="setupdropdown">
+          <a class="dropdown-item" href="#testtypesetup">Test type</a>
+          <a class="dropdown-item" href="#testsetup">Test</a>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <button class="btn  btn-outline-dark dropdown-toggle" id="testrequestdropdown" data-toggle="dropdown">
+          Test Request
+        </button>
+        <div class="dropdown-menu" aria-labelledby="testrequestdropdown">
+          <a href="#entry" class="dropdown-item">Entry</a>
+          <a href="#payment" class="dropdown-item">Payment</a>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <button class="btn  btn-outline-dark dropdown-toggle" id="reportdropdown" data-toggle="dropdown">
+          Report
+        </button>
+        <div class="dropdown-menu" aria-labelledby="reportdropdown">
+          <a href="#testwise" class="dropdown-item">Test Wise</a>
+          <a href="#typewise" class="dropdown-item">Type Wise</a>
+          <a href="#unpaidbill" class="dropdown-item">Unpaid Bill</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!------------------------------------------- Home End ------------------------------------------->
+
+  <!------------------------------------------- Test Type Setup Start ------------------------------------------->
+  <div class="container mt-5" id="testtypesetup">
+    <h2>Test Type Setup</h2>
+    <form action="">
+      <div class="form-group mt-5 row">
+        <label class="col-sm-4 col-form-label text-sm-left text-md-right text-lg-right" for="name">Type Name</label>
+        <div class="col-sm-6">
+          <input class="form-control" type="text" id="name">
+        </div>
+      </div>
+      <div class="text-right divtesttypebtn ">
+        <button class="btn testtypebtn" type="button">Save</button>
+      </div>
+    </form>
+    <table class="table table-bordered table-hover">
+      <thead>
+        <th scope="col">SL</th>
+        <th scope="col">Type Name</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!------------------------------------------- Test Type Setup End ------------------------------------------->
+  
+  <!------------------------------------------- Test Setup Start ------------------------------------------->
+  <div class="container mt-5" id="testsetup">
+    <h2>Test Setup</h2>
+    <form action="">
+      <div class="form-group mt-5 row">
+        <label class="col-sm-4 col-form-label text-sm-left text-md-right text-lg-right" for="name2">Type Name</label>
+        <div class="col-sm-6">
+          <input class="form-control" type="text" id="name2">
+        </div>
+      </div>
+      <div class="form-group mt-5 row">
+        <label class="col-sm-4 col-form-label text-sm-left text-md-right text-lg-right" for="fee">Fee</label>
+        <div class="col-sm-6">
+          <input class="form-control" type="number" id="fee">
+        </div>
+        <div class="label">
+          <label for="fee">BDT</label>
+        </div>
+      </div>
+      <div class="form-group mt-5 row">
+        <label class="col-sm-4 col-form-label text-sm-left text-md-right text-lg-right" for="testype">Test type</label>
+        <div class="col-sm-6">
+          <select class="form-control" id="testype">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+          </select>
+        </div>
+      </div>
+      <div class="text-right divtestbtn ">
+        <button class="btn testbtn" type="submit">Save</button>
+      </div>
+    </form>
+    <table class="table table-bordered table-hover">
+      <thead>
+        <th scope="col">SL</th>
+        <th scope="col">Type Name</th>
+        <th scope="col">Fee</th>
+        <th scope="col">Type</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-------------------------------------------Test Setup End ------------------------------------------->
+  
+  <!------------------------------------------- Test Request Entry Start ------------------------------------------->
+  <div class="container mt-5" id="entry">
+    <h2>Test Request Entry</h2>
+    <form action="">
+      <div class="form-group mt-5 row">
+        <label class="col-sm-4 col-form-label text-sm-left text-md-right text-lg-right" for="name3">Name of the
+          Patient</label>
+        <div class="col-sm-6">
+          <input class="form-control" type="text" id="name3">
+        </div>
+      </div>
+      <div class="form-group mt-5 row">
+        <label class="col-sm-4 col-form-label text-sm-left text-md-right text-lg-right" for="birth">Date of
+          Birth</label>
+        <div class="col-sm-6">
+          <input class="form-control" type="date" id="birth">
+        </div>
+      </div>
+      <div class="form-group mt-5 row">
+        <label class="col-sm-4 col-form-label text-sm-left text-md-right text-lg-right" for="mobile">Mobile No</label>
+        <div class="col-sm-6">
+          <input class="form-control" type="tel" id="mobile">
+        </div>
+      </div>
+      <div class="form-group mt-5 row">
+        <label class="col-sm-4 col-form-label text-sm-left text-md-right text-lg-right" for="select">Select Text</label>
+        <div class="col-sm-6">
+          <select class="form-control" id="select">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group mt-5 row">
+        <label class="col-sm-8 col-form-label text-sm-left text-md-right text-lg-right" for="fee2">Fee</label>
+        <div class="col-sm-2">
+          <input class="form-control fee-entry" type="number" id="fee2">
+        </div>
+      </div>
+      <div class="text-right divtestbtn ">
+        <button class="btn testbtn" type="button">Add</button>
+      </div>
+
+    </form>
+    <table class="table table-bordered table-hover">
+      <thead>
+        <th scope="col">SL</th>
+        <th scope="col">Test</th>
+        <th scope="col">Fee</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="form-group mt-5 row">
+      <label class="col-sm-8 col-form-label text-sm-left text-md-right text-lg-right" for="fee3">Fee</label>
+      <div class="col-sm-4 label">
+        <input class="form-control" type="number" id="fee3">
+      </div>
+    </div>
+    <div class="text-right">
+      <button class="btn testbtn" type="submit">Save</button>
+    </div>
+  </div>
+  <!------------------------------------------- Test Request Entry End ------------------------------------------->
+  <!------------------------------------------- payment start ------------------------------------------->
+  <div class="container mt-5" id="payment">
+    <h2>Payment</h2>
+    <form action="">
+      <div class="form-group mt-5 row">
+        <label class="col-sm-4 col-form-label text-sm-left text-md-right text-lg-right" for="bill">Bill No</label>
+        <div class="col-sm-6">
+          <input class="form-control" type="text" id="bill">
+        </div>
+        <div class="label">
+          <label for="">OR</label>
+        </div>
+      </div>
+      <div class="form-group mt-5 row">
+        <label class="col-sm-4 col-form-label text-sm-left text-md-right text-lg-right" for="mobile2">Mobile No</label>
+        <div class="col-sm-6">
+          <input class="form-control" type="tel" id="mobile2">
+        </div>
+        <div class="btn1">
+          <button class="btn searchbtn" type="search">Search</button>
+        </div>
+      </div>
+    </form>
+    <form action="">
+      <div class="form-group mt-5 row">
+        <label class="col-sm-4 col-form-label text-sm-left text-md-right text-lg-right" for="amount">Amount</label>
+        <div class="col-sm-6">
+          <input class="form-control" type="number" id="amount">
+        </div>
+      </div>
+      <div class="form-group mt-5 row">
+        <label class="col-sm-4 col-form-label text-sm-left text-md-right text-lg-right" for="date">Due Date</label>
+        <div class="col-sm-6">
+          <input class="form-control" type="date" id="date">
+        </div>
+        <div class="btn1">
+          <button class="btn searchbtn" type="submit">Pay</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- Payment end -->
+  <!-- Test wise Report Start -->
+  <div class="container mt-5" id="testwise">
+    <h2>Test Wise Report</h2>
+    <form action="">
+      <div class="form-group mt-5 row">
+        <label class="col-sm-4 col-form-label text-sm-left text-md-right text-lg-right" for="fromdate">From Date</label>
+        <div class="col-sm-6">
+          <input class="form-control" type="date" id="fromdate">
+        </div>
+      </div>
+      <div class="form-group mt-5 row">
+        <label class="col-sm-4 col-form-label text-sm-left text-md-right text-lg-right" for="todate">To Date</label>
+        <div class="col-sm-6">
+          <input class="form-control" type="date" id="todate">
+        </div>
+        <div class="text-sm-center btn1">
+          <button class="btn searchbtn" type="submit">Show</button>
+        </div>
+      </div>
+    </form>
+    <table class="table table-bordered table-hover">
+      <thead>
+        <th scope="col">Sl</th>
+        <th scope="col">Total Name</th>
+        <th scope="col">Toatal Test</th>
+        <th scope="col">Total Amount</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th></th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="container row">
+      <div class="col-sm  text-center">
+        <button class="btn">PDF</button>
+      </div>
+      <div class="col-sm ">
+        <div class="form-group row">
+          <label class="col-sm col-form-label text-sm-left text-lg-right" for="total">Total</label>
+          <input type="number" class="col-sm form-control" id="total">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Test Wise Report End -->
+  <!-- Type wise Report Start -->
+  <div class="container mt-5" id="typewise">
+    <h2>Type Wise Report</h2>
+    <form action="">
+      <div class="form-group mt-5 row">
+        <label class="col-sm-4 col-form-label text-sm-left text-md-right text-lg-right" for="fromdate2">From Date</label>
+        <div class="col-sm-6">
+          <input class="form-control" type="date" id="fromdate2">
+        </div>
+      </div>
+      <div class="form-group mt-5 row">
+        <label class="col-sm-4 col-form-label text-sm-left text-md-right text-lg-right" for="todate2">To Date</label>
+        <div class="col-sm-6">
+          <input class="form-control" type="date" id="todate2">
+        </div>
+        <div class="text-sm-center btn1">
+          <button class="btn searchbtn" type="submit">Show</button>
+        </div>
+      </div>
+    </form>
+    <table class="table table-bordered table-hover">
+      <thead>
+        <th scope="col">Sl</th>
+        <th scope="col">Test Type Name</th>
+        <th scope="col">Total number of Test</th>
+        <th scope="col">Total Amount</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="container row">
+      <div class="col-sm  text-center">
+        <button class="btn">PDF</button>
+      </div>
+      <div class="col-sm ">
+        <div class="form-group row">
+          <label class="col-sm col-form-label text-sm-left text-lg-right" for="total2">Total</label>
+          <input type="number" class="col-sm form-control" id="total2">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Type Wise Report End -->
+  <!-- Unpaid Bill Report Start -->
+  <div class="container mt-5" id="unpaidbill">
+    <h2>Unpaid Bil Report</h2>
+    <form action="">
+      <div class="form-group mt-5 row">
+        <label class="col-sm-4 col-form-label text-sm-left text-md-right text-lg-right" for="fromdate3">From Date</label>
+        <div class="col-sm-6">
+          <input class="form-control" type="date" id="fromdate3">
+        </div>
+      </div>
+      <div class="form-group mt-5 row">
+        <label class="col-sm-4 col-form-label text-sm-left text-md-right text-lg-right" for="todate3">To Date</label>
+        <div class="col-sm-6">
+          <input class="form-control" type="date" id="todate3">
+        </div>
+        <div class="text-sm-center btn1">
+          <button class="btn searchbtn" type="submit">Show</button>
+        </div>
+      </div>
+    </form>
+    <table class="table table-bordered table-hover">
+      <thead>
+        <th scope="col">Sl</th>
+        <th scope="col">Bill Number</th>
+        <th scope="col">Contact No</th>
+        <th scope="col">Patient Name</th>
+        <th scope="col">Bill Amount</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="container row">
+      <div class="col-sm  text-center">
+        <button class="btn">PDF</button>
+      </div>
+      <div class="col-sm ">
+        <div class="form-group row">
+          <label class="col-sm col-form-label text-sm-left text-lg-right" for="total3">Total</label>
+          <input type="number" class="col-sm form-control" id="total3">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Unpaid Bill Report End -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
